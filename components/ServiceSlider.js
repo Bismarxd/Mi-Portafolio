@@ -23,14 +23,12 @@ const datosServicios = [
   {
     icon: <RxCrop />,
     title: "Desarollo de Sitios Web",
-    description:
-      "Creación de sitios web profesionales y personalizados",
+    description: "Creación de sitios web profesionales y personalizados",
   },
   {
     icon: <RxPencil2 />,
     title: "Desarollo de Aplicaciones Web",
-    description:
-      "Creación de aplicaciones web funcionales y eficientes",
+    description: "Creación de aplicaciones web funcionales y eficientes",
   },
   {
     icon: <RxDesktop />,
@@ -69,18 +67,20 @@ const ServiceSlider = () => {
         clickable: true,
       }}
       modules={[FreeMode, Pagination]}
-      className="h-[240px] sm:h-[340px]"
+      className="h-[180px] sm:h-[340px]"
     >
       {datosServicios.map((item, index) => {
         return (
           <SwiperSlide key={index}>
-            <div className="bg-slate-500 h-max rounded-lg px-6 py-2 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[rgba(89, 65, 169, 0.15)] transition-all duration-300">
+            <div className="bg-slate-500 h-max rounded-lg px-6 py-0 md:py-2 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[rgba(89, 65, 169, 0.15)] transition-all duration-300">
               {/* icono */}
-              <div className="text-4xl text-cyan-700 mb-4">{item.icon}</div>
+              <div className="text-xl md:text-4xl text-cyan-700 mb-4">
+                {item.icon}
+              </div>
               {/* titulo */}
               <div className="mb-8">
-                <div className="mb-2 text-lg">{item.title}</div>
-                <p className="max-w-[350px] leading-normal">
+                <div className="mb-2 text-sm md:text-lg">{item.title}</div>
+                <p className="max-w-[200px] md:max-w-[350px] leading-normal text-xs md-text-lg">
                   {item.description}
                 </p>
               </div>

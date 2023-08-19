@@ -43,7 +43,11 @@
   background-origin: border-box;
   background-clip: content-box, border-box;
 }
-
+@media (max-width: 768px) {
+  .btn {
+    height: 2rem;
+  }
+}
 #container-stars {
   position: absolute;
   z-index: -1;
@@ -214,17 +218,17 @@ strong {
   }
   .boton,
   .input {
-    @apply h-[40px];
+    @apply h-[20px] md:h-[40px];
   }
   .input {
-    @apply w-full h-[40px] rounded-lg pl-6 capitalize;
+    @apply w-full h-[20px] md:h-[40px] rounded-lg pl-2 md:pl-6 capitalize;
   }
   .input,
   .textarea {
     @apply bg-transparent outline-none focus:ring-1 focus:ring-teal-400 border border-white/20 placeholder:text-white/30 placeholder:font-light;
   }
   .textarea {
-    @apply w-full h-[140px] p-6 capitalize rounded-lg resize-none;
+    @apply w-full h-[70px] md:h-[140px] p-6 capitalize rounded-lg resize-none;
   }
 }
 

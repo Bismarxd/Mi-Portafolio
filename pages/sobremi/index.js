@@ -147,7 +147,7 @@ const SobreMi = () => {
   ]);
 
   return (
-    <div className="h-full py-32 text-center xl:text-left z-50">
+    <div className="h-[50%] md:h-full py-32 text-center xl:text-left z-50 overflow-scroll">
       <Circles />
 
       {/* Avatar */}
@@ -169,7 +169,7 @@ const SobreMi = () => {
             initial="hidden"
             animate="show"
             exit="hiden"
-            className="h2 text-sm md:text-4xl font-extrabold z-50"
+            className="h2 text-sm md:text-4xl font-extrabold z-50 -mt-5"
           >
             <AnimacionLetras palabras={palabras} />
           </motion.h2>
@@ -178,7 +178,7 @@ const SobreMi = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="leading-[1.8] text-[10px] md:text-xs text-white font-light max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 xl:ml-20 z-50"
+            className="hidden md:flex leading-[1.8] text-[10px] md:text-xs text-white font-light max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 xl:ml-20 z-50"
           >
             Soy un apasionado del desarrollo web autodidacta comprensión de tecnologías fullstack, destacando en la creación de proyectos utilizando herramientas como React, Node.js y PHP, etc. Mi enfoque autodirigido y compromiso con la mejora continua me han permitido adquirir conocimientos prácticos y habilidades valiosas.
           </motion.p>
@@ -221,9 +221,9 @@ const SobreMi = () => {
           initial="hidden"
           animate="show"
           exit="hiden"
-          className="flex flex-col w-full xl:max-w-[50%] h-[430px]"
+          className="flex flex-col w-full xl:max-w-[50%] h-[430px] z-30"
         >
-          <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 text-xs md:text-base -mt-10 z-50">
+          <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 text-xs md:text-base -mt-10 z-30">
             {datos.map((item, itemIndex) => {
               return (
                 <div
@@ -231,7 +231,7 @@ const SobreMi = () => {
                   className={`${
                     index === itemIndex &&
                     "text-teal-600 after:w-full after:bg-teal-600 after:transition-all after:duration-all"
-                  } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0   z-50`}
+                  } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0   z-30`}
                   onClick={() => setIndex(itemIndex)}
                 >
                   {item.title}
@@ -239,12 +239,12 @@ const SobreMi = () => {
               );
             })}
           </div>
-          <div className="bg-slate-600 p-1 md:p-4 xl:py-2 flex flex-col gap-y-0 md:gap-y-2 xl:gap-y-4 items-center xl:items-start rounded-xl overflow-y-scroll mb-32 md:mb-5 md:mr-10 ">
+          <div className="bg-slate-600 p-1 md:p-4 xl:py-2 flex flex-col gap-y-0 md:gap-y-2 xl:gap-y-4 items-center xl:items-start rounded-xl overflow-y-scroll mb-32 md:mb-5 md:mr-10 max-h-[50%] md:max-h-full">
             {datos[index].info.map((item, itemIndex) => {
               return (
                 <div
                   key={itemIndex}
-                  className="md:flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white z-50"
+                  className="md:flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white"
                 >
                   <div className="font-light md:mb-0 text-xs">{item.title}</div>
                   <div className="hidden md:flex">-</div>

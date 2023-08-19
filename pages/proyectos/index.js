@@ -21,7 +21,7 @@ const Proyectos = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="h2 text-5xl xl:mt-12 mt-4"
+              className="h2 text-xl md:text-5xl xl:mt-12 mt-4"
             >
               Mis Mejores <br /> Proyectos{" "}
               <span className="text-cyan-600">.</span>
@@ -44,7 +44,7 @@ const Proyectos = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="w-full xl:max-w-[60%]"
+            className="w-full xl:max-w-[60%] -mt-5"
           >
             {/* slider */}
             <ProyectSlides />

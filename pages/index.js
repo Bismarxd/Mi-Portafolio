@@ -38,7 +38,7 @@ export default function Home() {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="text-[2.5rem] leading-tight md:text-[3.5rem] md:leading-[1.3] mb-8 font-semibold"
+              className="text-[1.5rem] leading-tight md:text-[3.5rem] md:leading-[1.3] mb-8 font-semibold"
             >
               BISMARCK MAYTA{" "}
             </motion.h1>

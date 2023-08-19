@@ -115,7 +115,7 @@ const ProyectSlides = () => {
         clickable: true,
       }}
       modules={[Navigation, Pagination]}
-      className="h-[280px] sm:h-[400px] swiper-container"
+      className="h-[180px] sm:h-[400px] swiper-container"
       slidesPerView={1} // Mostrar solo un elemento en dispositivos móviles
       breakpoints={{
         // Ajustar la cantidad de elementos a medida que aumenta el tamaño de la pantalla
@@ -134,7 +134,7 @@ const ProyectSlides = () => {
               {slide.images.map((image, index) => {
                 return (
                   <div
-                    className="relative rounded-lg overflow-hidden flex items-center justify-center group"
+                    className="relative rounded-lg overflow-hidden flex items-center justify-center group "
                     key={index}
                   >
                     <div className="flex items-center justify-center relative overflow-hidden group">
@@ -144,26 +144,26 @@ const ProyectSlides = () => {
                         width={1000}
                         height={1000}
                         alt=""
-                        className="h-[20rem]"
+                        className="-mt-10 md:mt-0 md:h-[20rem]"
                       />
                       {/* fondo gradient */}
                       <Link target="_blank" href={image.url}>
                         <div className="absolute inset-0 bg-gradient-to-l from-transparent via-[#015590] to-[#039E92] opacity-0 group-hover:opacity-80 transition-all duration-700"></div>
                       </Link>
                       {/* titulo */}
-                      <div className="absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-8 transition-all duration-300 ml-5 z-50">
-                        <div className="font-black uppercase text-2xl">
+                      <div className="absolute bottom-0 translate-y-full group-hover:-translate-y-16 group-hover:xl:-translate-y-16 transition-all duration-300 ml-5 z-50">
+                        <div className="font-black uppercase text-lg md:text-2xl">
                           {image.title}
                         </div>
-                        <div className="flex items-center gap-x-2 text-[13px] tracking-[0.2em]">
+                        <div className="flex items-center gap-x-0 md:gap-x-2 text-[13px] tracking-[0.2em]">
                           {/* titulo parte1 */}
                           <div className="delay-100">VER</div>
                           {/* titulo parte2 */}
-                          <div className="translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150">
+                          <div className="md:translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150">
                             PROYECTO
                           </div>
                           {/* icono */}
-                          <div className="text-8xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200">
+                          <div className="text-4xl md:text-8xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200">
                             <Link target="_blank" href={image.url}>
                               <span className="inline-block transition-transform transform-gpu hover:animate-bounce">
                                 <RiGithubLine className=" hover:text-blue-500" />

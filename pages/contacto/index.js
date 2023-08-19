@@ -12,7 +12,7 @@ import { fadeIn } from "@/variants";
 
 const Contacto = () => {
   return (
-    <div className="h-full mt-20 md:mt-0">
+    <div className="h-screen mt-0 ">
       <div className="container mx-auto py-16 text-center xl:text-left flex items-center justify-center h-full">
         {/* texto y formulario */}
         <div className="flex flex-col w-full max-w-[700px]">
@@ -22,7 +22,7 @@ const Contacto = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h2 text-center mb-12"
+            className="h2 text-center mb-5 md:mb-12"
           >
             Contactarme
           </motion.h2>
@@ -32,15 +32,15 @@ const Contacto = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="flex-1 flex flex-col gap-6 w-full mx-auto"
+            className="flex-1 flex flex-col gap-2 md:gap-6 w-full mx-auto"
           >
-            <div className="flex gap-x-6 z-50">
+            <div className="flex gap-x-6 z-50 text-sm md:text-lg">
               <input type="text" placeholder="nombre" className="input" />
               <input type="email" placeholder="e-mail" className="input" />
             </div>
             <input type="text" placeholder="Asunto" className="input" />
             <textarea placeholder="Mensaje" className="textarea"></textarea>
-            <button className="boton rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-x-green-950 group">
+            <button className="boton rounded-full border border-white/50 max-w-[120px] md:max-w-[170px] px-4 md:px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-x-green-950 group text-xs md:text-lg">
               <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
                 Enviar
               </span>

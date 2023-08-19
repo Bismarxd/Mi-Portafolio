@@ -37,17 +37,19 @@ const ProjectsBtn = () => {
         </button>
       </Link>
 
-      <button class="btn" type="button">
-        <strong>DESCARGAR CV</strong>
-        <div id="container-stars">
-          <div id="stars"></div>
-        </div>
+      <Link href="/cv.pdf" target="_blank" rel="noopener noreferrer">
+        <button class="btn" type="button">
+          <strong>VER CV</strong>
+          <div id="container-stars">
+            <div id="stars"></div>
+          </div>
 
-        <div id="glow">
-          <div class="circle"></div>
-          <div class="circle"></div>
-        </div>
-      </button>
+          <div id="glow">
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+        </button>
+      </Link>
     </div>
   );
 };
